@@ -81,7 +81,7 @@ public class AnotherController {
         return "";
     }
 
-    @GetMapping(  "/rencherir")
+    @PostMapping(  "/rencherir")
     public String encherir(@RequestHeader("token") String value,@RequestBody InputEncherir inputEncherir){
         String rep="";
         double input=Double.valueOf(inputEncherir.getInput());
